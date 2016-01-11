@@ -2,13 +2,15 @@
 __author__ = 'lixin'
 import urllib2
 import time
-import re
 
 class Spider:
     def __init__(self):
         self.page_num = 1
         self.total_num = 0
-        self.page_spider = page.Page()
+        self.header = { 'Host' : 'verycd.gdajie.com',
+                        'Referer' : 'http://verycd.gdajie.com/music/page',
+                        'User-Agent' : 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
+        self.data = None
 
     def getCurrentTime(self):
         return time.strftime('[%Y-%m-%d %H:%M:%S]',time.localtime(time.time()))
@@ -18,10 +20,10 @@ class Spider:
 
     def getPage(self, url):
         try:
-            request = urllib2.Request(url)
+            request = urllib2.Request(url, headers= self.header)
             response = urllib2.urlopen(request)
-            return response.read().decode("utf-8")
+            return response
         except urllib2.URLError, e:
             if hasattr(e, "reason"):
-                print "Something Error!Reason:",e.reason
+                print "Something Error!Reason:", e.code, e.reason
                 return None
