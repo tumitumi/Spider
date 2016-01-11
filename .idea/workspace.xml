@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6280abd-7689-45c9-ac1b-4c11d32a704c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Re.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spider.py" afterPath="$PROJECT_DIR$/Spider.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Spider.iws" />
@@ -486,7 +483,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452516697198</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix 1.0 scrapy guandajie">
+      <created>1452526027676</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1452526027676</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -532,7 +535,8 @@
     <MESSAGE value="add" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="add Spider" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Spider" />
+    <MESSAGE value="fix 1.0 scrapy guandajie" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 1.0 scrapy guandajie" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
