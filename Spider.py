@@ -7,9 +7,7 @@ class Spider:
     def __init__(self):
         self.page_num = 1
         self.total_num = 0
-        self.header = { 'Host' : 'verycd.gdajie.com',
-                        'Referer' : 'http://verycd.gdajie.com/music/page',
-                        'User-Agent' : 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
+        self.header = { 'User-Agent' : 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
         self.data = None
 
     def getCurrentTime(self):

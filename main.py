@@ -5,8 +5,8 @@ import Re
 
 
 def main():
-    url = "http://verycd.gdajie.com/music/page1"
-    testRe = Re.Re(url)
+    url = "http://verycd.gdajie.com/music/page"
+    testRe = Re.Re(url,2)
     testRe.sortPage()
 
 if __name__ == "__main__":
