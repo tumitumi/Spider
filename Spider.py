@@ -22,8 +22,10 @@ class Spider:
         try:
             request = urllib2.Request(url, headers= self.header)
             response = urllib2.urlopen(request)
+            time.sleep(2)
             return response
         except urllib2.URLError, e:
             if hasattr(e, "reason"):
                 print "Something Error!Reason:", e.code, e.reason
+                time.sleep(2)
                 return None
